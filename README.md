@@ -70,7 +70,7 @@ function onChange(executionContext) {
     // alert scripts for demo
     var alertStrings = {
       confirmButtonLabel: "Yes",
-      text: "You have Clicked, Primary Button",
+      text: "You have Clicked, Standard Button",
       title: "On Click",
     };
     var alertOptions = { height: 120, width: 260 };
