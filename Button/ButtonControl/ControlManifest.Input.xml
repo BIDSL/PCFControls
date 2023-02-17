@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="bidsl" constructor="ButtonControl" version="0.0.1" display-name-key="ButtonControl" description-key="ButtonControl description" control-type="standard">
+  <control namespace="bidsl" constructor="ButtonControl" version="0.0.6" display-name-key="ButtonControl" description-key="ButtonControl description" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="buttonField" display-name-key="Button Field" description-key="Field which need to be replaced with button" of-type="SingleLine.Text" usage="bound" required="true" />
-    <property name="buttonLabel" display-name-key="Label" description-key="Label for the button " of-type="SingleLine.Text" usage="input" required="true" />
-    <property name="buttonIcon" display-name-key="Icon" description-key="Icon for the button " of-type="SingleLine.Text" usage="input" required="true" />
-    <property name="buttonColor" display-name-key="Color" description-key="Color for the button " of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="buttonField" display-name-key="Field" description-key="Field which need to be replaced with button" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="buttonType" display-name-key="Type" description-key="Choose Button type values as 0 - Standard, 1 - Primary, 2 - Action, 3 - Icon; Default button is Standard" of-type="Whole.None" usage="input" required="false" />
+    <property name="buttonLabel" display-name-key="Label" description-key="Label for the button " of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="buttonIcon" display-name-key="Icon" description-key="Icon for the button " of-type="SingleLine.Text" usage="input" required="false" />
 
     <resources>
       <code path="index.ts" order="1"/>

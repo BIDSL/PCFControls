@@ -1,16 +1,22 @@
 import * as React from "react";
-import { Stack, IStackTokens, IIconProps } from "@fluentui/react";
+import {
+  Stack,
+  IStackTokens,
+  IIconProps,
+  IButtonStyles,
+} from "@fluentui/react";
 import {
   ActionButton,
   DefaultButton,
   PrimaryButton,
+  IconButton,
+  IBaseButtonProps,
 } from "@fluentui/react/lib/Button";
 
-export interface IButtonExampleProps {
-  // These are set based on the toggles shown above the examples (not needed in real code)
+export interface IButtonControlProps extends IBaseButtonProps {
   disabled?: boolean;
   checked?: boolean;
-  btnIcon?: IIconProps;
+  btnIcon?: string;
   btnChoice: number;
   btnText: string;
 }
@@ -18,28 +24,30 @@ export interface IButtonExampleProps {
 // Example formatting
 const stackTokens: IStackTokens = { childrenGap: 40 };
 
-export const ButtonDefaultExample: React.FunctionComponent<
-  IButtonExampleProps
+export const BIDSLButtonControl: React.FunctionComponent<
+  IButtonControlProps
 > = (props) => {
-  const { disabled, checked, btnIcon, btnChoice, btnText } = props;
+  const { disabled, checked, btnChoice, btnText } = props;
+  let iconProps: IIconProps = { iconName: props.btnIcon ?? "" };
   switch (btnChoice) {
     // default button
     case 0:
       return (
         <DefaultButton
           text={btnText}
-          onClick={btnClicked}
+          onClick={props.onClick}
           disabled={disabled}
           checked={checked}
+          iconProps={iconProps}
         />
       );
     // primary button
     case 1:
       return (
         <PrimaryButton
-          iconProps={btnIcon}
+          iconProps={iconProps}
           text={btnText}
-          onClick={btnClicked}
+          onClick={props.onClick}
           disabled={disabled}
           checked={checked}
         />
@@ -49,19 +57,31 @@ export const ButtonDefaultExample: React.FunctionComponent<
       return (
         <ActionButton
           text={btnText}
-          iconProps={btnIcon}
-          onClick={btnClicked}
+          iconProps={iconProps}
+          onClick={props.onClick}
           disabled={disabled}
           checked={checked}
+        />
+      );
+
+    case 3:
+      return (
+        <IconButton
+          iconProps={iconProps}
+          title={btnText}
+          ariaLabel={btnText}
+          disabled={disabled}
+          checked={checked}
+          onClick={props.onClick}
         />
       );
     // default button
     default:
       return (
         <DefaultButton
-          text="Standard"
-          iconProps={btnIcon}
-          onClick={btnClicked}
+          text="BIDSL"
+          iconProps={iconProps}
+          onClick={props.onClick}
           allowDisabledFocus
           disabled={disabled}
           checked={checked}
@@ -69,7 +89,3 @@ export const ButtonDefaultExample: React.FunctionComponent<
       );
   }
 };
-
-function btnClicked(): void {
-  alert("Clicked");
-}
