@@ -21,7 +21,7 @@ When the PCF was intrdouced (4 years ago), I have created a [PCF control (https:
  
  4.Configure following propeties in the control
  
- ![image](https://user-images.githubusercontent.com/125174051/219655546-e1951100-edb5-4615-918c-4059b66b3cc2.png)
+ ![image](https://user-images.githubusercontent.com/125174051/219674041-5b949107-21d2-4198-bd64-61bc7887c96b.png)
    
  5. Button Properties
     - Type - There are 4 different type of butttons can be rendered using this control
