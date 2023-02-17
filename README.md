@@ -2,7 +2,7 @@
 ## Button Control
 It's a most common ask to have a button on the Model driven form but there is no OOB (Out Of the Box) way. 
 
-When the PCF was intrdouced (4 years ago), I have created a [PCF control (https://github.com/ManirajKV/PCF) ] to achieve this requirement. It worked very well so far and thought of upgrading the button control to use the Fluent UI Button control. It will give similar look to the control in the Model Driven Apps.
+When the PCF was introduced (4 years ago), I have created a [PCF control (https://github.com/ManirajKV/PCF) ] to achieve this requirement. It worked very well so far and thought of upgrading the button control to use the Fluent UI Button control. It will give similar look to the control in the Model Driven Apps.
 
 ### Screenshots
 
