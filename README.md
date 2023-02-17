@@ -56,7 +56,7 @@ When the PCF was intrdouced (4 years ago), I have created a [PCF control (https:
 ### Configure click event
 When the button clicked, it triggers the onchange event in the field by setting field value as `Button label's` value. 
 
-If there is no button label value in the control, control set the value as `Clicked`
+If there is no button label value in the control, control sets the value as `Clicked`
 ```
 function onChange(executionContext) {
   // get formContext
