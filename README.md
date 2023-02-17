@@ -6,6 +6,8 @@ When the PCF was intrdouced (4 years ago), I have created a [PCF control (https:
 
 ### Screenshots
 
+![image](https://user-images.githubusercontent.com/125174051/219683712-dee87633-06bc-437b-8c9a-78bc3a75f6e7.png)
+
 ### How to Install
 1. Download the latest solution from here
 2. Import the latest solution in your environment
@@ -49,8 +51,35 @@ When the PCF was intrdouced (4 years ago), I have created a [PCF control (https:
 
 ![image](https://user-images.githubusercontent.com/125174051/219658015-0963bd1e-969a-42c5-9783-3c36a4bceb2a.png)
 
+> These control can be configrued With / Without Icon / Text.
+
 ### Configure click event
 When the button clicked, it triggers the onchange event in the field by setting field value as `Button label's` value. 
 
-If there is no button label value in the control, it set as `Clicked`
+If there is no button label value in the control, control set the value as `Clicked`
+```
+function onChange(executionContext) {
+  // get formContext
+  let formContext = executionContext.getFormContext();
+  // get attribute
+  var stdButtonAttr = formContext.getAttribute("bids_standardbutton");
+  // get control value
+  var stdValue = stdButtonAttr.getValue();
 
+  if (stdValue == "Approve" || stdValue == "Clicked") {
+    // alert scripts for demo
+    var alertStrings = {
+      confirmButtonLabel: "Yes",
+      text: "You have Clicked, Primary Button",
+      title: "On Click",
+    };
+    var alertOptions = { height: 120, width: 260 };
+    Xrm.Navigation.openAlertDialog(alertStrings, alertOptions);
+  }
+  // prevent the value to be stored in the field.
+  // otherwise it wont trigger onchange event,
+  // bcoz the trigger value from control and field value remains same
+  stdButtonAttr.setValue(null);
+  stdButtonAttr.setSubmitMode("never");
+}
+```
