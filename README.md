@@ -2,7 +2,7 @@
 ## Button Control
 It's a most common ask to have a button on the Model driven form but there is no OOB (Out Of the Box) way. 
 
-When the PCF was intrdouced (4 years ago), I have created a [PCF control (https://github.com/ManirajKV/PCF) ] to achieve this requirement. It worked very well so far and thought of upgrading the button control to use the Fluent UI Button control. It will give similar look to the control in the Model Driven Apps.
+When the PCF was introduced (4 years ago), I have created a [PCF control (https://github.com/ManirajKV/PCF) ] to achieve this requirement. It worked very well so far and thought of upgrading the button control to use the Fluent UI Button control. It will give similar look to the control in the Model Driven Apps.
 
 ### Screenshots
 
@@ -70,7 +70,7 @@ function onChange(executionContext) {
     // alert scripts for demo
     var alertStrings = {
       confirmButtonLabel: "Yes",
-      text: "You have Clicked, Primary Button",
+      text: "You have Clicked, Standard Button",
       title: "On Click",
     };
     var alertOptions = { height: 120, width: 260 };
@@ -83,3 +83,5 @@ function onChange(executionContext) {
   stdButtonAttr.setSubmitMode("never");
 }
 ```
+
+[Youtube link: (https://youtu.be/pbu5nei3K64)]
