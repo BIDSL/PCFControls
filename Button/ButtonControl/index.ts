@@ -42,7 +42,8 @@ export class ButtonControl
           ? "BIDSL"
           : this.buttonText,
       btnIcon:
-        context.parameters.buttonIcon.raw ?? this.buttonType == 3 ? "Add" : "",
+        context.parameters.buttonIcon.raw ??
+        (this.buttonType == 3 ? "Add" : ""),
       checked: false,
       onClick: () => {
         this.notifyOutputChanged();
