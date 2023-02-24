@@ -17,6 +17,8 @@ When the PCF was introduced (4 years ago), I have created a [PCF control (https:
 
 ### Configure the Control
 
+> Config Video: [(https://youtu.be/pbu5nei3K64)]
+
 1. Once the soluton is installed
 2. Navigate to the MDA form to configure the text field to show as button
 3. Click Add Component and select Button Control
@@ -91,11 +93,10 @@ function onChange(executionContext) {
 }
 ```
 
-[Video link: (https://youtu.be/pbu5nei3K64)]
-
 ## DatePicker Control
 
 One of the common requirement in Date field is to validate the dates.
+
 Ex.
 
 1. Date of Birth should be today or past
@@ -123,6 +124,8 @@ We used to write script onchange event on the date field to validate. So wanted 
 2. Import the latest solution in your environment
 
 ### Configure the Control
+
+> Config Video: [(https://youtu.be/RGJDAumEc4c)]
 
 1. Once the solution is installed
 2. Navigate to the MDA form (Classic form designer)to configure the date field to use configurable DatePicker Control
