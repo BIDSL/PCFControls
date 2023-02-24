@@ -102,9 +102,18 @@ Ex.
 2. Review dates should be in future
 3. Default the date field to Today's date or a month after
 
-we used to write script onchange event on the date field to validate. So wanted to try the #fluent-UI #datepicker control to achieve this. it can be configured and updated anytime without touching the code.
+We used to write script onchange event on the date field to validate. So wanted to try the #fluent-UI #datepicker control to achieve this. it can be configured and updated anytime without wriitng the code.
 
 ### Screenshots
+
+**Default Value:**
+![image](https://user-images.githubusercontent.com/125174051/221223447-0c4ec7cc-f083-4cf5-90c8-349e45aae233.png)
+**Date Ranges:**
+![image](https://user-images.githubusercontent.com/125174051/221222297-12528ee2-9179-4b51-a473-f1505421c843.png)
+
+![image](https://user-images.githubusercontent.com/125174051/221224704-256dd5fe-e016-45ce-a2d4-0f4a5d081ef7.png)
+
+
 
 ### How to Install
 
@@ -121,11 +130,27 @@ we used to write script onchange event on the date field to validate. So wanted 
 3. Edit control properties, select control tab and add DatePicker control
 
 4. Configure following properties in the control
-5. Control Properties
+5. ![image](https://user-images.githubusercontent.com/125174051/221220154-5c5a24a6-68b8-4692-ba31-af748dbfdcdc.png)
+
+6. Control Properties
 
 | Name               | Supported Field(s) | Default | Description                                                                                                          |
 | ------------------ | ------------------ | ------- | -------------------------------------------------------------------------------------------------------------------- |
-| Minimum Date Range | Whole Number       |         | Set the starting range for the dates which are availalbe to select; If not specified, min date range is not applied. ex. +5 days / -500 days  |
-| Maximum Date Range | Whole Number       |         | Set the Max range for the dates which are availalbe to select; If not specified, max date range is not applied. ex. +5 days / -500 days                                                                                                                 |
-| Enable Default     | Whole Number       | false   | Set the value to 0 for disable default value and 1 for enable                                                                                                                     |
+| Minimum Date Range | Whole Number       |         | Set the starting range for the dates which are availalbe to select; If not specified, min date range is not applied. ex. +5 / -500; Numbers in days  |
+| Maximum Date Range | Whole Number       |         | Set the Max range for the dates which are availalbe to select; If not specified, max date range is not applied. ex. +5 / -500; Numbers in days                                                                                                                 |
+| Enable Default     | Whole Number       | false   | Set the value to 0 for disable and 1 for enable default value                                                                                                                     |
 | Default Date       | Whole Number       | 0       | No value specified, today's date will be applied as default value Numbers +/- days will be applied from +/- todays date|
+
+### Examples
+1. Configure Date of Birth to accept dates upto Today / Yesterday
+   - Minimum Date (No Value)
+   - Maximum Date 0 - allowed upto today, -1 - upto Yesterday
+2. Date(s) should only in next three months
+   - Minimum Date - 0
+   - Maximum Date - 90
+3. Set Default Value to Today
+   - Enable Default - 1
+   - Default Date - 0
+4. Set Default Value to 1 month from now
+   - Enable Default - 1
+   - Default Date - 30
