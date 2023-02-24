@@ -125,7 +125,8 @@ we used to write script onchange event on the date field to validate. So wanted 
 
 | Name               | Supported Field(s) | Default | Description                                                                                                          |
 | ------------------ | ------------------ | ------- | -------------------------------------------------------------------------------------------------------------------- |
-| Minimum Date Range | Whole Number       |         | 'Set the starting range for the dates which are availalbe to select; If not specified, min date range is not applied |
-| Maximum Date Range | Whole Number       |         |                                                                                                                      |
-| Enable Default     | Whole Number       | false   |                                                                                                                      |
-| Default Date       | Whole Number       | 0       | 0                                                                                                                    |
+| Minimum Date Range | Whole Number       |         | Set the starting range for the dates which are availalbe to select; If not specified, min date range is not applied |
+| Maximum Date Range | Whole Number       |         | Set the Max range for the dates which are availalbe to select; If not specified, max date range is not applied                                                                                                                 |
+| Enable Default     | Whole Number       | false   | Set the value to 0 for disable default value and 1 for enable                                                                                                                     |
+| Default Date       | Whole Number       | 0       | No value specified, today's date will be applied as default value 
+Numbers +/- days will be applied from +/- todays date|
