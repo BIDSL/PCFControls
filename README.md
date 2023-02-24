@@ -107,12 +107,14 @@ We used to write script onchange event on the date field to validate. So wanted 
 ### Screenshots
 
 **Default Value:**
+
 ![image](https://user-images.githubusercontent.com/125174051/221223447-0c4ec7cc-f083-4cf5-90c8-349e45aae233.png)
+
 **Date Ranges:**
+
 ![image](https://user-images.githubusercontent.com/125174051/221222297-12528ee2-9179-4b51-a473-f1505421c843.png)
 
 ![image](https://user-images.githubusercontent.com/125174051/221224704-256dd5fe-e016-45ce-a2d4-0f4a5d081ef7.png)
-
 
 
 ### How to Install
@@ -130,7 +132,8 @@ We used to write script onchange event on the date field to validate. So wanted 
 3. Edit control properties, select control tab and add DatePicker control
 
 4. Configure following properties in the control
-5. ![image](https://user-images.githubusercontent.com/125174051/221220154-5c5a24a6-68b8-4692-ba31-af748dbfdcdc.png)
+
+![image](https://user-images.githubusercontent.com/125174051/221220154-5c5a24a6-68b8-4692-ba31-af748dbfdcdc.png)
 
 6. Control Properties
 
