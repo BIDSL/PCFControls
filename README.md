@@ -1,4 +1,4 @@
-# PCFControls  [![Github All Releases](https://img.shields.io/github/downloads/bidsl/PCFControls/total.svg)]()
+# PCF Controls  [![Github All Releases](https://img.shields.io/github/downloads/bidsl/PCFControls/total.svg)]()
 
 ## Button Control
 
