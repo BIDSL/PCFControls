@@ -38,9 +38,10 @@ export class ButtonControl
       disabled: context.mode.isControlDisabled,
       btnChoice: this.buttonType,
       btnText:
-        this.buttonType != 3 && this.buttonText == ""
-          ? "BIDSL"
-          : this.buttonText,
+        context.parameters.buttonLabel.raw ??
+        (this.buttonType != 3 && this.buttonText == ""
+          ? context.parameters.buttonField.attributes?.DisplayName ?? "BIDSL"
+          : this.buttonText),
       btnIcon:
         context.parameters.buttonIcon.raw ??
         (this.buttonType == 3 ? "Add" : ""),
@@ -66,7 +67,7 @@ export class ButtonControl
 
   /**
    * It is called by the framework prior to a control receiving new data.
-   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as “bound” or “output”
+   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as â€œboundâ€ or â€œoutputâ€
    */
   public getOutputs(): IOutputs {
     // TODO use the checked feature, dynamically set value from code
