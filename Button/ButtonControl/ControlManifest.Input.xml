@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="bidsl" constructor="ButtonControl" version="0.0.7" display-name-key="ButtonControl" description-key="ButtonControl description" control-type="standard">
+  <control namespace="bidsl" constructor="ButtonControl" version="0.0.9" display-name-key="ButtonControl" description-key="ButtonControl description" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="buttonField" display-name-key="Field" description-key="Field which need to be replaced with button" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="buttonType" display-name-key="Type" description-key="Choose Button type values as 0 - Standard, 1 - Primary, 2 - Action, 3 - Icon; Default button is Standard" of-type="Whole.None" usage="input" required="false" />
